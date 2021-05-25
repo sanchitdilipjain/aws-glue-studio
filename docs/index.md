@@ -105,6 +105,6 @@ It integrates with sources like Amazon S3, Amazon RDS, Amazon Kinesis, Apache Ka
         
         3. Execute the job 
         
-            <img src="images/image14.png" class="inline" width="800" height="400"/> 
+            <img src="images/image14.png" class="inline" width="800" height="300"/> 
         
         4. Verify the output
