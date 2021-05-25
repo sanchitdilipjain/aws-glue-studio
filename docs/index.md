@@ -17,7 +17,7 @@ It integrates with sources like Amazon S3, Amazon RDS, Amazon Kinesis, Apache Ka
   
   -  Once the Cloudformation stack is deployed successfully please capture the values for RoleName and S3Bucket details
       
-      <img src="images/image1.png" class="inline"/> 
+      <img src="images/image1.png" class="inline" width="800" height="200"/> 
 
 - Step 2: Working with Glue Studio
   
