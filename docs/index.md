@@ -15,7 +15,7 @@ It integrates with sources like Amazon S3, Amazon RDS, Amazon Kinesis, Apache Ka
   
   -  Download the <a href="https://github.com/sanchitdilipjain/aws-glue-studio/blob/main/cloudformation.json">cloudformation template</a> from this link and Deploy it
   
-  -  Once the Cloudformation stack is deployed successfully please capture the values for RoleName and S3Bucket details
+  -  Once the Cloudformation stack is deployed successfully please capture the values for RoleName from the Output Section of stack
       
       <img src="images/image1.png" class="inline" width="800" height="200"/> 
 
@@ -102,9 +102,25 @@ It integrates with sources like Amazon S3, Amazon RDS, Amazon Kinesis, Apache Ka
         2. Specify the job details and save the job
         
            <img src="images/image13.png" class="inline" width="800" height="400"/> 
+           
+           **Note:** Select the same IAM role from the drop-down which was deployed via Cloudformation stack under prerequisite section
         
         3. Execute the job 
         
+            - Glue job triggered successfully 
+        
             <img src="images/image14.png" class="inline" width="800" height="300"/> 
+            
+            - Glue job completed successfully 
+            
+            <img src="images/image15.png" class="inline" width="800" height="300"/> 
         
         4. Verify the output
+            
+            - Output in S3 bucket
+            
+            <img src="images/image16.png" class="inline" width="700" height="150"/> 
+            
+            - Querying the output using S3 Select
+            
+            <img src="images/image17.png" class="inline" width="700" height="350"/> 
