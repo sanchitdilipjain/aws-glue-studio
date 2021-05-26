@@ -1,0 +1,24 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "GlueStudioLabRole": {
+            "Type": "AWS::IAM::Role",
+            "Properties": {
+                "Path": "/service-role/",
+                "AssumeRolePolicyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"glue.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}",
+                "MaxSessionDuration": 3600,
+                "ManagedPolicyArns": [
+                    "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole"
+                ]
+            }
+        }
+    },
+    "Outputs": {
+        "RoleName": {
+            "Description": "IAM role for GlueStudio lab",
+            "Value": {
+                "Ref": "GlueStudioLabRole"
+            }
+        }
+    }
+}
